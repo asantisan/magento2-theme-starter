@@ -1,0 +1,51 @@
+// @category Starter Theme
+// @copyright Copyright (c) 2019
+
+//
+//  Layout variables
+//  _____________________________________________
+
+//
+//  Magento Variables - Override based on theme
+//  ---------------------------------------------
+
+// source lib/web/css/source/lib/variables/_layout.less
+
+//  Widths
+@layout__width: ''; // for the fixed width layout
+@layout__max-width: 1440px;
+@layout-indent__width: 20px;
+@layout__width-xs-indent: 15px;
+
+//  Variables used for layout grid
+@total-columns: 12;
+@gutter-width: 0;
+
+//  Variables for layout columns
+@layout-column__width: @total-columns;
+@layout-column__sidebar-width: 3;
+@layout-column__left-width: @layout-column__sidebar-width;
+@layout-column__right-width: @layout-column__sidebar-width;
+
+//  Variables for layout columns depending on layout used
+@layout-column-main__width-1: 100%;
+@layout-column-main__width-2-left: 320px;
+@layout-column-main__width-2-right: @layout-column__width - @layout-column__right-width;
+@layout-column-main__width-3: @layout-column__width - @layout-column__left-width - @layout-column__right-width;
+
+//  Checkout columns width
+@layout-column-checkout__width-left: 3;
+@layout-column-checkout__width-main: @layout-column__width - @layout-column-checkout__width-left;
+
+//
+//  Theme Layout Styles
+//  ---------------------------------------------
+// screens above 768px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+}
+
+// screens above 1024px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+}

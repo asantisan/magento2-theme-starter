@@ -1,0 +1,79 @@
+// @category Starter Theme
+// @copyright Copyright (c) 2019
+
+//
+//  Local Fonts Import
+//  _____________________________________________
+.lib-font-face(
+  @family-name,
+  @font-path,
+  @font-weight: normal,
+  @font-style: normal
+) {
+  @font-face {
+    font-family: @family-name;
+    src: url('@{font-path}.tff') format('woff2'),url('@{font-path}.woff2') format('woff2'),
+    url('@{font-path}.woff') format('woff');
+    font-weight: @font-weight;
+    font-style: @font-style;
+  }
+}
+
+& when (@media-common = true) {
+  .lib-font-face(
+    @family-name:'Montserat',
+    @font-path: '@{baseDir}fonts/Montserrat-Bold.tff',
+    @font-weight: 700,
+    @font-style: normal
+  );
+
+  .lib-font-face(
+    @family-name:'Montserat',
+    @font-path: '@{baseDir}fonts/Montserrat-Bold.tff',
+    @font-weight: 700,
+    @font-style: italic
+  );
+
+  .lib-font-face(
+    @family-name:'Montserat',
+    @font-path: '@{baseDir}fonts/Montserrat-Bold.tff',
+    @font-weight: 500,
+    @font-style: normal
+  );
+
+  .lib-font-face(
+    @family-name:'Montserat',
+    @font-path: '@{baseDir}fonts/Montserrat/Montserrat-Bold.tff',
+    @font-weight: 500,
+    @font-style: italic
+  );
+
+  .lib-font-face(
+    @family-name:'Montserat',
+    @font-path: '@{baseDir}fonts/Montserrat/Montserrat-Bold',
+    @font-weight: 600,
+    @font-style: normal
+  );
+
+  .lib-font-face(
+    @family-name:'Montserat',
+    @font-path: '@{baseDir}fonts/Montserrat/Montserrat-Bold',
+    @font-weight: 600,
+    @font-style: italic
+  );
+
+  .lib-font-face(
+    @family-name:'Playfair Display',
+    @font-path: '@{baseDir}fonts/Playfair_Display/PlayfairDisplay-Italic',
+    @font-style: italic
+  );
+
+  .lib-font-face(
+    @family-name:'Playfair Display',
+    @font-path: '@{baseDir}fonts/Playfair_Display/PlayfairDisplay-Regular',
+    @font-style: normal
+  );
+
+
+
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category    Starter Theme
+* @copyright   Copyright (c) 2019
+*/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Logo -->
+        <!-- TODO: replace with svg -->
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">300</argument>
+                <argument name="css_class" xsi:type="string">logo</argument>
+            </arguments>
+        </referenceBlock>
+
+        <!-- Hide Default Welcome Message -->
+        <referenceBlock name="header">
+            <arguments>
+                <argument name="show_part" xsi:type="string">other</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceBlock name="top.links">
+            <arguments>
+                <argument name="css_class" xsi:type="string">header links account-links</argument>
+            </arguments>
+        </referenceBlock>
+
+        <move element="top.search" destination="header.panel" after="-"/>
+        <move element="minicart" destination="header.panel" after="top.links"/>
+
+        <!-- Remove Header Wishlist Link -->
+        <referenceBlock name="wish-list-link" remove="true" />
+        <referenceBlock name="multiple-wish-list-link" remove="true"/>
+        <!-- Remove Header Account Link -->
+        <referenceBlock name="my-account-link" remove="true" />
+        <!-- Remove Header Advanced Search Link -->
+        <referenceBlock name="advanced-search-link" remove="true"/>
+        <!-- Remove Header Compare Link -->
+        <referenceBlock name="catalog.compare.link" remove="true"/>
+        <!-- Remove Footer Report Bugs -->
+        <referenceBlock name="report.bugs" remove="true" />
+    </body>
+</page>

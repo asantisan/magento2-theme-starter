@@ -1,0 +1,67 @@
+// @category Starter Theme
+// @copyright Copyright (c) 2019
+
+//
+//  Catalog Grid Item
+//  _____________________________________________
+
+//
+//  Theme Variables
+//  ---------------------------------------------
+
+
+@product-name-link__text-decoration: none;
+@product-name-link__text-decoration__active: @link__hover__text-decoration;
+@product-name-link__text-decoration__hover: @link__hover__text-decoration;
+@product-name-link__text-decoration__visited: @link__hover__text-decoration;
+
+@product-item__hover__background-color: @color-white;
+@product-item__hover__box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, .3);
+
+@product-item__wishlist-icon--color: @color-white;
+
+@product-item__width: 280px;
+
+//
+//  Common (style-m.css)
+//  _____________________________________________
+// all screens
+& when (@media-common = true) {
+
+
+}
+
+//
+//  Mobile (style-m.css)
+//  _____________________________________________
+// screens below 640px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+
+
+}
+// screens below 768px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
+
+// screens above 640px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {
+
+
+}
+
+//
+//  Desktop (style-l.css)
+//  _____________________________________________
+
+// screens above 768px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+
+}
+
+// screens above 1024px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category    Starter Theme
+* @copyright   Copyright (c) 2019 
+*/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!-- Favicon - Manifest -->
+        <link rel="apple-touch-icon" sizes="180x180" src="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" src="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" src="/favicon-16x16.png" />
+        <link rel="manifest" src="/site.webmanifest"/>
+        <meta name="msapplication-TileColor" content="" />
+        <meta name="theme-color" content=""/>
+        <!-- -->
+
+        <!-- Font Awesome 5 -->
+        <css src="css/fontawesome_5.min.css" />
+        <!-- Bootstrap 4.3 -->
+        <css src="css/bootstrap.min.css" />
+    </head>
+</page>

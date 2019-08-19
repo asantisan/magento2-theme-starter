@@ -1,0 +1,92 @@
+// @category Starter Theme
+// @copyright Copyright (c) 2019
+
+//
+//  Buttons
+//  _____________________________________________
+
+
+//
+//  Magento Variables
+//  ---------------------------------------------
+
+//  Font style
+@button__font-family: @font-family__base;
+@button__font-size: 14px;
+@button__font-weight: @font-weight__semibold;
+@button__line-height: @font-size__base + 2;
+@button__margin: 0;
+@button__padding: 16px; // is set up to false when buttons don't depend on side paddings or have fixed width
+@button__width: false; // is set up to false when buttons depend on side paddings or to fixed value when needed
+
+//  Display settings
+@button__display: inline-block;
+@button__cursor: pointer;
+@button__border-radius: 0;
+
+
+//  Default = secondary button
+@button__color: @secondary__color;
+@button__background: @color-white;
+@button__border: 1px solid @accent__color;
+
+@button__hover__color: @button__color;
+@button__hover__background: @button__background;
+@button__hover__border: @button__border;
+
+@button__active__color: @color-white;
+@button__active__background: @button__hover__background;
+@button__active__border: @button__border;
+
+//  Primary button
+@button-primary__background: @color-white;
+@button-primary__border: 1px solid @color-black;
+@button-primary__color: @color-black;
+
+@button-primary__hover__background: @button-primary__background;
+@button-primary__hover__border: 1px solid @accent__color;
+@button-primary__hover__color: @accent__color;
+
+@button-primary__active__background: @button-primary__hover__background;
+@button-primary__active__border: @button-primary__hover__border;
+@button-primary__active__color: @button-primary__color;
+
+//
+//  Theme Variables
+//  ---------------------------------------------
+
+
+//
+//  Common (style-m.css)
+//  _____________________________________________
+// all screens
+& when (@media-common = true) {
+
+}
+
+//
+//  Mobile (style-m.css)
+//  _____________________________________________
+// screens below 640px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+
+}
+
+// screens below 768px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
+
+//
+//  Desktop (style-l.css)
+//  _____________________________________________
+
+// screens above 768px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+}
+
+// screens above 1024px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+}

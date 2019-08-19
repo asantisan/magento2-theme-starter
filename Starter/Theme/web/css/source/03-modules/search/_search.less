@@ -1,0 +1,50 @@
+// @category Starter Theme
+// @copyright Copyright (c) 2019
+
+//
+//  Search
+//  _____________________________________________
+
+
+//
+//  Magento Variables
+//  ---------------------------------------------
+
+//
+//  Theme Variables
+//  ---------------------------------------------
+
+
+//
+//  Common (style-m.css)
+//  _____________________________________________
+// all screens
+& when (@media-common = true) {
+
+
+}
+
+//
+//  Mobile (style-m.css)
+//  _____________________________________________
+// screens below 640px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+
+}
+// screens below 768px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
+
+//
+//  Desktop (style-l.css)
+//  _____________________________________________
+
+// screens above 768px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+}
+// screens above 1024px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+}

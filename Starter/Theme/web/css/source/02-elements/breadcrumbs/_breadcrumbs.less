@@ -1,0 +1,93 @@
+// @category Starter Theme
+// @copyright Copyright (c) 2019
+
+//
+//  Breadcrumbs
+//  _____________________________________________
+
+
+//
+//  Magento Variables
+//  ---------------------------------------------
+
+@breadcrumbs__font-size: @font-size__s;
+@breadcrumbs__container-margin: 0 0 @indent__xl;
+@breadcrumbs__padding: 12px;
+
+@breadcrumbs-separator__symbol: '/';
+@breadcrumbs-separator__color: @breadcrumbs-current__color;
+
+@breadcrumbs-icon__use: false;
+@breadcrumbs-icon__font-content: @icon-next;
+@breadcrumbs-icon__font: @icon-font;
+@breadcrumbs-icon__font-size: 24px;
+@breadcrumbs-icon__font-line-height: 18px;
+@breadcrumbs-icon__font-color: false;
+@breadcrumbs-icon__font-margin: 0;
+@breadcrumbs-icon__font-vertical-align: top;
+
+//  Current page
+@breadcrumbs-current__color: @secondary__color;
+@breadcrumbs-current__font-weight: @font-weight__regular;
+
+//  Link
+@breadcrumbs-link__color: @primary__color;
+@breadcrumbs-link__background: false;
+@breadcrumbs-link__border: false;
+@breadcrumbs-link__text-decoration: none;
+
+//  Visited
+@breadcrumbs-link__visited__color: @primary__color;
+@breadcrumbs-link__visited__background: @breadcrumbs-link__background;
+@breadcrumbs-link__visited__border: @breadcrumbs-link__border;
+@breadcrumbs-link__visited__text-decoration: none;
+
+//  Hover
+@breadcrumbs-link__hover__color: @primary__color;
+@breadcrumbs-link__hover__background: false;
+@breadcrumbs-link__hover__border: @breadcrumbs-link__border;
+@breadcrumbs-link__hover__text-decoration: underline;
+
+//  Active
+@breadcrumbs-link__active__color: @primary__color;
+@breadcrumbs-link__active__background: @breadcrumbs-link__background;
+@breadcrumbs-link__active__border: @breadcrumbs-link__border;
+@breadcrumbs-link__active__text-decoration: none;
+
+//
+//  Theme Variables
+//  ---------------------------------------------
+
+
+//
+//  Common (style-m.css)
+//  _____________________________________________
+// all screens
+& when (@media-common = true) {
+
+}
+
+//
+//  Mobile (style-m.css)
+//  _____________________________________________
+// screens below 640px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+
+}
+// screens below 768px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
+
+//
+//  Desktop (style-l.css)
+//  _____________________________________________
+
+// screens above 768px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+}
+// screens above 1024px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+}

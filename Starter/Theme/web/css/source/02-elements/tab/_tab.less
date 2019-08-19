@@ -1,0 +1,121 @@
+// @category Starter Theme
+// @copyright Copyright (c) 2019
+
+//
+//  Tabs
+//  _____________________________________________
+
+
+//
+//  Magento Variables
+//  ---------------------------------------------
+
+
+//
+//  Tabs
+//  ---------------------------------------------
+
+//  Tabs controls
+@tab-control__font-size: @font-size__base;
+@tab-control__font-family: false;
+@tab-control__font-weight: @font-weight__regular;
+@tab-control__font-style: false;
+@tab-control__line-height: @tab-control__height;
+@tab-control__height__base: @line-height__computed;
+@tab-control__height: @indent__base;
+@tab-control__margin-right: 0;
+@tab-control__padding-top: @indent__s;
+@tab-control__padding-right: @indent__base;
+@tab-control__padding-bottom: @tab-control__padding-top;
+@tab-control__padding-left: @tab-control__padding-right;
+@tab-control__border-color: @secondary__color;
+@tab-control__border-width: @border-width__base;
+
+
+//  Current tab
+@tab-control__background-color: @tertiary__color;
+@tab-control__color: @primary__color;
+@tab-control__text-decoration: none;
+
+@tab-control__hover__background-color: lighten(@tab-control__background-color, 5%);
+@tab-control__hover__color: @tab-control__color;
+@tab-control__hover__text-decoration: @tab-control__text-decoration;
+
+@tab-control__active__background-color: @tab-control__background-color;
+@tab-control__active__color: @tab-control__color;
+@tab-control__active__text-decoration: @tab-control__text-decoration;
+@tab-control__active__border-top-color: @secondary__color;
+
+@tab-control__visited__color: @tab-control__color;
+@tab-control__visited__text-decoration: @tab-control__text-decoration;
+
+@tab-content__background-color: @color-white;
+@tab-content__border-top-status: false;
+@tab-content__border: @tab-control__border-width solid @tab-control__border-color;
+@tab-content__margin-top: @tab-control__height + @tab-control__border-width + @tab-control__padding-top + @tab-control__padding-bottom;
+@tab-content__padding-top: @indent__base;
+@tab-content__padding-right: @indent__base;
+@tab-content__padding-bottom: @tab-content__padding-top;
+@tab-content__padding-left: @tab-content__padding-right;
+
+
+//
+//  Theme Variables
+//  ---------------------------------------------
+
+
+//
+//  Common (style-m.css)
+//  _____________________________________________
+// all screens
+& when (@media-common = true) {
+  .product.data.items > .item.title > .switch {
+    text-transform: uppercase;
+  }
+
+}
+
+//
+//  Mobile (style-m.css)
+//  _____________________________________________
+// screens below 640px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+
+}
+// screens below 768px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
+
+//
+//  Desktop (style-l.css)
+//  _____________________________________________
+
+// screens above 768px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  .product.data.items > .item.title {
+
+    &:first-of-type {
+      border-left: 1px solid @tab-control__color;
+    }
+
+    &.active > .switch {
+      border-top: 4px solid @tab-control__active__border-top-color;
+      padding-bottom: 8px;
+
+      &:focus, &:hover {
+        padding-bottom: 8px;
+      }
+    }
+
+    & > .switch {
+      border-left: none !important;
+    }
+
+  }
+
+}
+// screens above 1024px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+}

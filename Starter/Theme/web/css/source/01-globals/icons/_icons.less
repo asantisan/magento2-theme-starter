@@ -1,0 +1,94 @@
+// @category Starter Theme
+// @copyright Copyright (c) 2019
+
+//
+//  SVG Icons variables
+//  _____________________________________________
+@svg-cart: escape('<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z"/></svg>');
+@svg-search: escape('<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>');
+@svg-heart: escape('<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>');
+@svg-heart-full: escape('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>');
+@svg-plus-circle: escape('<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.5 0c6.347 0 11.5 5.153 11.5 11.5s-5.153 11.5-11.5 11.5-11.5-5.153-11.5-11.5 5.153-11.5 11.5-11.5zm0 1c5.795 0 10.5 4.705 10.5 10.5s-4.705 10.5-10.5 10.5-10.5-4.705-10.5-10.5 4.705-10.5 10.5-10.5zm.5 10h6v1h-6v6h-1v-6h-6v-1h6v-6h1v6z"/></svg>');
+@svg-login: escape('<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.598 9h-1.055c1.482-4.638 5.83-8 10.957-8 6.347 0 11.5 5.153 11.5 11.5s-5.153 11.5-11.5 11.5c-5.127 0-9.475-3.362-10.957-8h1.055c1.443 4.076 5.334 7 9.902 7 5.795 0 10.5-4.705 10.5-10.5s-4.705-10.5-10.5-10.5c-4.568 0-8.459 2.923-9.902 7zm12.228 3l-4.604-3.747.666-.753 6.112 5-6.101 5-.679-.737 4.608-3.763h-14.828v-1h14.826z"/></svg>');
+@svg-arrow: escape('<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/></svg>');
+//
+//  Magento Variables
+//  ---------------------------------------------
+
+
+@icon__position: before;
+@icon__text-hide: false;
+@icon__height: 26px;
+@icon__width: 26px;
+@icon__margin: '';
+@icon__vertical-align: middle;
+
+@icon-image__position-x: 0;
+@icon-image__position-y: 0;
+
+@icon-sprite__position-x: 0;
+@icon-sprite__position-y: 0;
+@icon-sprite__grid: 26px;
+
+@icon-font: @icons__font-name;
+@icon-font__position: @icon__position;
+@icon-font__text-hide: @icon__text-hide;
+@icon-font__margin: @icon__margin;
+@icon-font__size: inherit;
+@icon-font__line-height: @icon-font__size;
+@icon-font__color: blue;
+@icon-font__color-hover: false;
+@icon-font__color-active: false;
+@icon-font__vertical-align: @icon__vertical-align;
+@icon-font__display: inline-block;
+
+@icon-calendar__font-size: 40px;
+
+// Default magento icon theme, used before pseudo content
+@icon-wishlist-full: url('data:image/svg+xml, @{svg-heart-full}');
+@icon-wishlist-empty: url('data:image/svg+xml, @{svg-heart}');
+@icon-warning: '\e602';
+@icon-update: '\e603';
+@icon-trash: '\e604';
+@icon-star: '\e605';
+@icon-settings: '\e606';
+@icon-pointer-down: '\e607';
+@icon-next: '\e608';
+@icon-menu: '\e609';
+@icon-location: '\e60a';
+@icon-list: '\e60b';
+@icon-info: '\e60c';
+@icon-grid: '\e60d';
+@icon-comment-reflected: '\e60e';
+@icon-collapse: '\e60f';
+@icon-checkmark: '\e610';
+@icon-cart: url('data:image/svg+xml, @{svg-cart}');
+@icon-calendar: '\e612';
+@icon-arrow-up: '\e613';
+@icon-arrow-down: '\e614';
+@icon-search: url('data:image/svg+xml, @{svg-search}');
+@icon-remove: '\e616';
+@icon-prev: '\e617';
+@icon-pointer-up: '\e618';
+@icon-pointer-right: '\e619';
+@icon-pointer-left: '\e61a';
+@icon-flag: '\e61b';
+@icon-expand: '\e61c';
+@icon-envelope: '\e61d';
+@icon-compare-full: '\e61e';
+@icon-compare-empty: '\e61f';
+@icon-comment: '\e620';
+@icon-up: '\e621';
+@icon-down: '\e622';
+@icon-help: '\e623';
+@icon-arrow-right: url('data:image/svg+xml, @{svg-arrow}');
+@icon-arrow-left-thin: '\e625';
+@icon-arrow-down-thin: '\e626';
+@icon-account: '\e627';
+@icon-gift-registry: '\e628';
+@icon-present: '\e629';
+@icon-arrow-up-thin: '\e633';
+
+//
+//  Theme Icons
+//  ---------------------------------------------
